@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s ease-in-out;
+}
+#container{
+    margin-top: 150px;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap:20px;
+}
+.button {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+}
+#red{
+    background-color: red;
+}
+#grey{
+    background-color: #212121;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
