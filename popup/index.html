@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="submit">Submit</button>
+        <div class="popup" id="pop">
+            <img src="download.png" alt="" height="100">
+            <p>Your submission completed successfully</p>
+            <button id="done">Done</button>
+        </div>
+    </div>
+    <script>
+        const popup=document.querySelector("#pop");
+        const btn=document.querySelector("#submit");
+        const btn2 = document.querySelector("#done")
+        btn.addEventListener("click",()=>{
+           popup.classList.add("poped")
+        })
+        btn2.addEventListener("click",()=>{
+           popup.classList.remove("poped")
+        })
+    </script>
+</body>
+</html>
